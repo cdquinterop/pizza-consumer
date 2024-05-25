@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PizzaService } from '../service/pizza.service';
 
 @Component({
   selector: 'page-main-pizza',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class PageMainComponent {
-  constructor() { }
+  constructor(private pizzaService: PizzaService) {
+    console.log(pizzaService.findAllIngredient());
+  }
+
+
+  get ingredients(){
+    return this.pizzaService.ingredientList;
+  }
+
 
 }
