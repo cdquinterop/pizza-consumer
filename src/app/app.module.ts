@@ -3,19 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PizzaBaseModule } from './pizza-base/pizza-base.module';
-import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PizzaBaseModule,
-    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
